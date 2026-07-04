@@ -4,6 +4,8 @@ Single-page marketing site for Loftsy — a premium micro-influencer agency. Bui
 
 ![Loftsy website preview](./docs/screenshot.png)
 
+> Regenerate the screenshot after UI changes: start the dev server, then run `npm run screenshot`.
+
 ## Stack
 
 - **Vue 3** (Composition API, SFC)

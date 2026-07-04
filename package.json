@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "screenshot": "node scripts/capture-screenshot.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
@@ -19,6 +20,7 @@
     "@vercel/node": "^5.8.22",
     "@vitejs/plugin-vue": "^6.0.7",
     "@vue/tsconfig": "^0.9.1",
+    "playwright": "^1.61.1",
     "typescript": "~6.0.2",
     "vite": "^8.1.1",
     "vue-tsc": "^3.3.5"
