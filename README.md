@@ -6,6 +6,11 @@ Single-page marketing site for Loftsy — a premium micro-influencer agency. Bui
 
 > Regenerate the screenshot after UI changes: start the dev server, then run `npm run screenshot`.
 
+## Project Brief
+
+- Local copy: [`docs/loftsy-website-brief.md`](docs/loftsy-website-brief.md)
+- Google Docs: [Loftsy Website Brief](https://docs.google.com/document/d/1QCx4BBWgAi8C7GOB4xtsPD5tJrqmzkM-cqvlR1EFFU4/edit?usp=sharing)
+
 ## Stack
 
 - **Vue 3** (Composition API, SFC)
@@ -161,6 +166,9 @@ src/
 ├── composables/             # Contact config, scroll reveal helpers
 ├── views/HomeView.vue       # Single-page layout
 └── styles/global.css        # Tailwind theme tokens
+docs/
+├── loftsy-website-brief.md  # Project brief (Markdown)
+└── screenshot.png           # README preview image
 api/
 └── contact.ts               # Vercel serverless contact handler
 ```
