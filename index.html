@@ -47,7 +47,7 @@
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; background: var(--paper); }
     body {
       background: var(--paper);
       color: var(--ink);
@@ -129,7 +129,7 @@
     /* rotator */
     .rotate-line { display: flex; align-items: baseline; gap: .3em; flex-wrap: wrap; }
     .rotator { position: relative; display: inline-block; height: 1em; overflow: hidden; vertical-align: bottom; color: var(--ink-40); }
-    .rotator span { display: block; font-style: italic; animation: rot 9s infinite; }
+    .rotator span { display: block; height: 1em; line-height: .84; font-style: italic; animation: rot 9s infinite; }
     @keyframes rot {
       0%,20% { transform: translateY(0); }
       25%,45% { transform: translateY(-100%); }
@@ -140,7 +140,13 @@
     .hero-bottom { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(1.5rem,4vw,3rem); align-items: end; margin-top: auto; padding-top: clamp(2rem,6vh,4rem); }
     .hero-sub { max-width: 30rem; color: var(--ink-60); }
     .hero-actions { display: flex; gap: .7rem; flex-wrap: wrap; justify-content: flex-end; }
-    @media (max-width: 720px) { .hero-bottom { grid-template-columns: 1fr; } .hero-actions { justify-content: flex-start; } }
+    @media (max-width: 720px) {
+      header { position: absolute; mix-blend-mode: normal; color: var(--ink); }
+      header .logo-img { filter: none; }
+      .hero { padding-bottom: clamp(1.5rem, 5svh, 2.75rem); }
+      .hero-bottom { grid-template-columns: 1fr; }
+      .hero-actions { justify-content: flex-start; }
+    }
 
     /* ---- buttons (magnetic) ---------------------------------- */
     .btn { display: inline-flex; align-items: center; gap: .7rem; font-family: var(--mono); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; padding: 1rem 1.6rem; border-radius: 100px; border: 1px solid var(--line-2); transition: background .5s var(--ease), color .5s var(--ease), border-color .5s var(--ease); will-change: transform; }
