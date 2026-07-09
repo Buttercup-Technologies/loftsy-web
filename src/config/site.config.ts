@@ -94,6 +94,15 @@ export const siteConfig: SiteConfig = {
       { name: 'En Uygun' },
       { name: 'KR Akademi' },
       { name: '3D' },
+      { name: 'Makyajtrendi' },
+      { name: 'Coffy' },
+      { name: 'Indomietrendi' },
+      { name: 'Coffy' },
+      { name: 'Indomie' },
+      { name: 'Tonguç' },
+      { name: 'Toprak' },
+      { name: 'Psh' },
+      { name: 'Aydın' },
     ],
   },
   services: {
@@ -123,8 +132,8 @@ export const siteConfig: SiteConfig = {
     button: { label: 'İletişime geç', href: '#contact' },
   },
   contact: {
-    email: 'info@loftsy.com',
-    whatsapp: '+90 555 555 55 55',
+    email: 'info@loftsy.com.tr',
+    whatsapp: '',
     form: {
       enabled: true,
       endpoint: '/api/contact',
