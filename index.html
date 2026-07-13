@@ -352,7 +352,7 @@
       .hero {
         min-height: 100svh;
         padding-top: clamp(6rem, 12vh, 8rem);
-        padding-bottom: 0;
+        padding-bottom: clamp(2.5rem, 6vh, 4.5rem);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -381,25 +381,24 @@
         font-weight: 300;
       }
       /* rotator */
-      .rotate-line {
-        display: flex;
-        align-items: baseline;
-        gap: 0.3em;
-        flex-wrap: wrap;
+      .rotate-line .mask {
+        display: inline-block;
+        vertical-align: baseline;
+        margin-right: 0.3em;
       }
       .rotator {
         position: relative;
         display: inline-block;
-        height: 1.1em;
-        line-height: 1.1;
+        height: 1.4em;
+        line-height: 1;
         overflow: hidden;
-        vertical-align: bottom;
+        vertical-align: -0.2em;
         color: var(--ink-40);
       }
       .rotator span {
         display: block;
-        height: 1.1em;
-        line-height: 1.1;
+        height: 1.4em;
+        line-height: 1.4;
         font-style: italic;
         animation: rot 9s infinite;
       }
